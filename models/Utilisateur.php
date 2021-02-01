@@ -2,7 +2,7 @@
 
 namespace Models;
 
-class Utilisateur {
+class Utilisateur extends DbConnect {
 
     private $idUtilisateur;
     private $nom;
@@ -71,6 +71,7 @@ class Utilisateur {
         $result->bindValue("pw", $this->passwd, \PDO::PARAM_STR);
 
         if(!$result->execute()) {
+            var_dump($result->errorInfo());
             return false;
         }
 

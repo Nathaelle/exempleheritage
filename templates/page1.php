@@ -2,7 +2,7 @@
 
 <h2>Ajout d'un demandeur</h2>
 
-<form action="index.php?route=insertdemandeur" method="POST">
+<form action="index.php?route=inserttravailleur" method="POST">
 <div><input type="text" placeholder="Nom" name="nom"></div>
 <div><input type="text" placeholder="Prénom" name="prenom"></div>
 <div><input type="text" placeholder="Code postal" name="cp"></div>

@@ -21,5 +21,11 @@ function insertTravailleur() {
 function insertDemandeur() {
 
     $demandeur = new Models\Demandeur();
+    $demandeur->setNom($_POST["nom"]);
+    $demandeur->setPrenom($_POST["prenom"]);
+    $demandeur->setCp($_POST["cp"]);
+    $demandeur->setEmail($_POST["email"]);
+    $demandeur->setPasswd($_POST["passwd"]);
+    $demandeur->insert();
     
 }
