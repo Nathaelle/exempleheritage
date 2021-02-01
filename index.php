@@ -20,6 +20,8 @@ switch($route) {
     break;
     case 'inserttravailleur' : insertTravailleur();
     break;
+    case 'insertservice' : insertService();
+    break;
     default : $t = showPage1();
 }
 

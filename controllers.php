@@ -29,3 +29,13 @@ function insertDemandeur() {
     $demandeur->insert();
     
 }
+
+function insertService() {
+
+    // $_POST["intitule"]
+    // $_POST["tarif"]
+    // $_POST["description"]
+    var_dump($_POST);
+    var_dump($_FILES);
+    
+}
